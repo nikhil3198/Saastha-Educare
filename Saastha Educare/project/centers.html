@@ -1,0 +1,322 @@
+﻿
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../project/css/footer.css">
+    <link rel="stylesheet" href="../project/css/header.css">
+    <title>Centers</title>
+    <style>
+
+    body{
+            margin:0;
+            padding:0;
+                display: block;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none !important;
+        }
+        .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+        
+        #map{
+           width:100%;
+           height:50%;
+        }
+
+        #loc {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+        #loc tr td a{
+            color: #41307c;
+    text-decoration: none;
+        }
+             #loc tr td a:hover{
+            color: #41307c;
+    text-decoration: underline;
+        }
+
+#loc td, #loc th {
+    border: 1px solid #777575;
+    padding: 10px;
+}
+
+#loc tr:nth-child(even){background-color: #f2f2f2;}
+
+#loc tr:hover {background-color: #ddd;}
+
+#loc th {
+  padding:10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#divel{
+    padding-left:20px;padding-right:20px;margin-bottom: 20px;
+}
+
+ @media only screen and (max-width: 376px) {
+  #map{
+    width: 125% !important;
+  }
+
+  footer.flex{
+      width:125% !important;
+  }
+  .logo{
+ width:125% !important;
+  }
+  .topnav{
+  	 width:125% !important;
+  }
+}
+@media only screen and (max-width:765px){
+    #divel{
+    padding-left:0px;padding-right:0px;
+}
+
+
+
+}
+    </style>
+</head>
+        
+<body>
+<body style="background-color:#F7F7F5;">
+    <div id="abc">
+      <div class="logo" style="background-image:url('../project/images/WOOD.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
+        <a href="#logo"><img id="logo" src="../project/images/Saastha Logo.jpg" alt="Saastha" style="width:150px;height:108px;"></a>
+        
+        
+      </div>
+      <div class="topnav" id="myTopnav">
+        <div style="margin-bottom: 40px">
+          <a href="Main.html">
+            <i class="fa fa-home"></i>
+          Home</a>
+          <a href="aboutus.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;About Us</a>
+          
+          <div id="mydropdown" class="dropdown">
+            <button  class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Courses
+            </button>
+            
+            <div class="dropdown-content" style="position: fixed;">
+              <a href="SaasthaAdv.html">IIT-JEE</a>
+              <a href="medical.html">Medical</a>
+              <a href="crashcourse.html">CET / Crash Course</a>
+            </div>
+          </div>
+          <a href="Admission.html"><i class="fa fa-adn" aria-hidden="true"></i>&nbsp;Admission</a>
+          <a href="centers.html"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Centers</a>
+          <a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a>
+          <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a>
+          <a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+      <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+      var y = document.getElementById("mydropdown");
+      if (y.className === "dropdown") {
+      y.className += " responsive";
+      } else {
+      y.className = "dropdown";
+      }
+      }
+      </script>
+    </div>
+    <div style="margin-bottom:20px;">
+        <img id="map"  src="..\project\images\location.jpg" alt="map">
+    </div>
+    <div  id="divel" style="">
+        <table id="loc" >
+            <thead>
+                <tr >
+                <th >Centre</th>
+                <th>Address</th>
+                <th >Get Direction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Koramangala</td>
+                    <td >St.Francis College</td>
+                    <td><a href="https://www.google.co.in/maps/place/St+Francis+College/@12.9273343,77.6280849,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae145e25c0c307:0xcf8b29c09ad759dc!8m2!3d12.9273343!4d77.6302736" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr >
+                    <td>Hesarghatta Road</td>
+                    <td>St. Theresa PU College, Off Tumkur Road</td>
+                    <td ><a href="https://www.google.co.in/maps/place/St+Theresa+Pre-University+College/@13.054805,77.5050869,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae233d204f183b:0xd2a2751e0a014654!8m2!3d13.054805!4d77.5072756" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >Residency Road </td>
+                    <td >St Josephs College Main </td>
+                    <td ><a href="https://www.google.co.in/maps/place/St.+Joseph%E2%80%99s+Pre-University+College/@12.971012,77.604097,15z/data=!4m5!3m4!1s0x3bae1680a56a367b:0xd5e28804a197d3d0!8m2!3d12.9711618!4d77.6041398" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >Rajajinagar</td>
+                    <td >No-41/15, 1<sup>st</sup> Floor, Opp Navrang Theatre, Navrang, Basveshwara Main Road Circle, Rajajinagar, Bangalore - 560010</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Giraffe+Learning+Center/@12.9889469,77.5448715,18.17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x3bae3d8f85c32f17:0x6d3473d8dcd27125!2sNavarang+Theatre,+1st+Block,+Rajaji+Nagar,+Bengaluru,+Karnataka+560010!2m2!1d77.552814!2d12.9985857!1m6!1m2!1s0x3bae3d934523961b:0x319ad1f6e8d57724!2sGiraffe+Learning+Center,+199A,+7th+Main+Rd,+3+Stage,+Basaveshwar+Nagar,+Mahaganapathi+Nagar,+Rajaji+Nagar,+Bengaluru,+Karnataka+560079!2m2!1d77.5455346!2d12.9882831!3m4!1s0x3bae3d934523961b:0x319ad1f6e8d57724!8m2!3d12.9882831!4d77.5455346" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td>Marathahalli</td>
+                    <td>No 7, 1<sup>st</sup> Floor, JJ Complex, Above Chemmanur Jewellers, Ashwath nagar ITPD main Road, Opp to A2B Sweets, Marathahalli, Bangalore-560037</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Chemmanur+Jewellers/@12.9569351,77.7000241,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae1232d1da4759:0xf29ea0770b8f81e8!8m2!3d12.9569351!4d77.7022128" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >RT Nagar</td>
+                    <td >No 335, 2<sup>nd</sup> Floor, Above Indian Bank, R T Nagar Main Road, Bangalore-32 Near FM Slik Shop</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Giraffe+Learning/@13.05007,77.5809705,14z/data=!4m8!1m2!2m1!1sgiraffe+learning+RT+Nagar!3m4!1s0x3bae1785b000b0ab:0x7d1570da21098f9a!8m2!3d13.05007!4d77.59848" target="_blank"><span class="glyphicon glyphicon-map-marker"></span>View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >Vasanthnagar </td>
+                    <td >Mount Carmel, Palce Cross Road</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Giraffe/@12.99381,77.5524711,13z/data=!4m8!1m2!2m1!1sgiraffe+learning+PALACE+CROSS+ROAD,+VASANTHNAGAR!3m4!1s0x3bae1640de446b4f:0x454ec745885e9059!8m2!3d12.99381!4d77.58749" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td>Koramangala</td>
+                    <td>Jyothi Nivas College, Near Madivala Checkpost</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Jyoti+Nivas+College/@12.9322515,77.6128437,17z/data=!4m8!1m2!2m1!1sJyothi+Nivas+College+KORAMANGALA,+NEAR+MADIWALA+CHECKPOST!3m4!1s0x0:0x5f28d9b00dfca57f!8m2!3d12.9327209!4d77.616939" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr >
+                    <td >Ramamurthy Nagar</td>
+                    <td >Ground Floor, Behind More Supermarket, Opp. Adishwar Showroom, Ramamurthynagar Main Road, Bangalore - 560016</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Giraffe+Learning/@13.0116584,77.6699812,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae112141c48ee3:0xd653f88be82e806!8m2!3d13.0116584!4d77.6721699" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >Kumaraswamy Layout</td>
+                    <td >Dayanand Sagar College</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Dayananda+Sagar+College+of+Engineering/@12.9075337,77.5635017,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae156339bdef37:0xeca52aab1bdad9be!8m2!3d12.9075337!4d77.5656904" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr >
+                    <td >Basaveshwaranagar</td>
+                    <td >Carmel College</td>
+                    <td><a href="https://www.google.co.in/maps/place/Carmel+Pre+University+College/@12.9882557,77.5428004,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae3d935bac5621:0x8c21ed8c4a859ccc!8m2!3d12.9882557!4d77.5449891?hl=en&amp;q=Carmel+College+BASAVESHWARANAGAR&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjy19iqh5_WAhVLgI8KHb-uA4YQ_AUICigB" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr >
+                    <td>HRBR Layout</td>
+                    <td >325, Shibha Complex, 3<sup>rd</sup> Cross, 3<sup>rd</sup> Block, HRBR Layout, Opp Hotel Sukh Sagar, Next to Jal Vayu Vihar</td>
+                    <td ><a href="https://www.google.co.in/maps/place/Giraffe+Learning/@13.02168,77.6347113,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae172473098793:0xfec5a883fe4e3ccc!8m2!3d13.02168!4d77.6369" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+                <tr>
+                    <td >Jayanagar</td>
+                    <td >312/17, 1<sup>st</sup> Floor, Sri Krishna Mansion, 27<sup>th</sup>  Cross, 10<sup>th</sup>  Main, 3rd Block, Jayanagar, diagonally opp Royal Comfort Hotel, Bangalore - 560011</td>
+                    <td><a href="https://www.google.co.in/maps/place/Giraffe+Learning/@12.9308769,77.5826778,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae159877ff0493:0x3bf010714ad45a3b!8m2!3d12.9308769!4d77.5848665?biw=1366&amp;bih=588&amp;q=giraffe+learning+center+Jayanagar&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjYpJbTiZ_WAhVJqo8KHZSEB94Q_AUICigB" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> View On Map</a></td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>    
+
+
+      <footer class="flex">
+  
+  <ul class="footer-list-top">
+
+    <li>
+      <h4 class="footer-list-header">QUICK LINKS</h4></li>
+     
+    <li><a href='aboutus.html' class="list footer-list-anchor" >About Us</a></li>
+    <li><a href='contactus.html' class="list footer-list-anchor" >Contact Us</a></li>
+    <li><a href='Admission.html' class="list footer-list-anchor" >Admission</a></li>
+
+    <li><a href='centers.html'  class="list footer-list-anchor">Centres</a></li>
+
+    
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">CONTACT US</h4></li>
+      <p class="add footer-list">27, Bull Temple Road, Basavanagudi, <br>
+            Bengaluru, Karnataka, 560004<br>
+        080-4260 4600, +91-9538141504<br>
+        customercare@saastha-edu.in</p>
+  </ul>
+  <ul class="footer-list-top">
+    <li >
+      <h4 class="footer-list-header">COURSES</h4></li>
+    <li><a href='SaasthaAdv.html' class="list footer-list-anchor" >IIT - JEE</a></li>
+    <li><a href='medical.html' class="list footer-list-anchor" >MEDICAL</a></li>
+    <li><a href='CrashCourse.html' class="list footer-list-anchor" >CET / Crash Course</a></li>
+   
+  </ul>
+
+<section class="social-section flex-rw">
+      <span class="social-overlap social-connect">
+      CONNECT <span class="social-small">with</span> US
+      </span>
+      <span class="social-overlap social-icons-wrapper">
+      <a href="https://www.facebook.com/public/Saastha-Educare" class="list" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="list" target="_blank" title="Twitter" ><i class="fa fa-twitter"></i></a>
+      <a href="https://instagram.com/" class="list" target="_blank" title="Instagram" ><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="list" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/" class="list" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+
+<div class="footer-bottom-wrapper">  
+
+ <p>&nbsp&nbsp&nbsp&nbsp© Saastha Educational Services Private Limited 2017  | All Rights Reserved</p>
+</div>
+        <a id="go-to-top" href="#" onclick="topFunction()" title="Back to top" ></a>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("go-to-top").style.display = "block";
+    } else {
+        document.getElementById("go-to-top").style.display = "none";
+    }
+}
+
+function topFunction() {
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</footer> 
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               

@@ -1,0 +1,215 @@
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../project/css/footer.css">
+	<link rel="stylesheet" href="../project/css/header.css">
+    <link rel="stylesheet" href="../project/css/medical.css">
+    <title>Medical</title>
+    <style>
+    
+    </style>
+</head>
+<body style="background-color:#F7F7F5;">
+    <div id="abc">
+			<div class="logo" style="background-image:url('../project/images/WOOD.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
+				<a href="#logo"><img id="logo" src="../project/images/Saastha Logo.jpg" alt="Saastha" style="width:150px;height:108px;"></a>
+				
+				
+			</div>
+			<div class="topnav" id="myTopnav">
+				<div style="margin-bottom: 40px">
+					<a href="Main.html">
+						<i class="fa fa-home"></i>
+					Home</a>
+					<a href="aboutus.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;About Us</a>
+					
+					<div id="mydropdown" class="dropdown">
+						<button  class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Courses
+						</button>
+						
+						<div class="dropdown-content">
+							<a href="SaasthaAdv.html">IIT-JEE</a>
+							<a href="medical.html">Medical</a>
+							<a href="crashcourse.html">CET / Crash Course</a>
+						</div>
+					</div>
+					<a href="Admission.html"><i class="fa fa-adn" aria-hidden="true"></i>&nbsp;Admission</a>
+					<a href="centers.html"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Centers</a>
+					<a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a>
+					<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a>
+					<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>
+			<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+			x.className += " responsive";
+			} else {
+			x.className = "topnav";
+			}
+			var y = document.getElementById("mydropdown");
+			if (y.className === "dropdown") {
+			y.className += " responsive";
+			} else {
+			y.className = "dropdown";
+			}
+			}
+			</script>
+		</div>
+    <div >
+        <div style="margin-left: 20px;margin-top: 20px;">
+            <p style="font-size: 22px;"><a href="main.html"><em>Home</em></a>/<i style="color:#73716E;font-family:sans-serif;">Medical</i></p>
+        </div>
+        <div style="display:flex;">
+        <div class="  imgdivs">
+
+            <div class=" container1">
+                <img src="..\project\images\medical.png" alt="Saastha Advance" class="image" style="width:100%;height:40%;">
+                <div class="middle">
+                    <div class="text" style="font-family:sans-serif;">Medical</div>
+                    <br />
+                    <div class="text"><button id="btn" class="btn button1">View Details</button></div>
+                </div>
+            </div>
+
+            <div class="paradivs">
+                <h3 >Medical</h3>
+                <hr />
+                <p class="para">Medicine is among the most preferred career options for the cream of talent at Plus 2 level. In fact, it is only the students with outstanding...</p>
+            </div>
+        </div>
+        
+        <div  id="details" class="animated " style="" >
+            <p class="info" style="">
+               The All India Pre-Medical Test (AIPMT) or National Eligibility cum Entrance Test (NEET) is an annual medical entrance examination held in India.. Conducted by the Central Board of Secondary Education (CBSE), Delhi the exam is conducted for seeking admission to BDS and MBBS courses in top medical colleges all over the country.
+               </p>
+               <p class="info">
+The exam consists of a single paper with 180 objective type questions from subjects including Physics, Biology (Botany & Zoology) and Chemistry. From each subject students are asked 45 questions which they have to complete within a duration of 3 hours. 4 marks are allotted for each question. For incorrect response there is one negative marking. However, if a student does not attend any question, no marks will be deducted.
+</p>
+<p class="info">
+Through NEET training offered by Deeksha, students excel in medical entrance exam, which helps them secure a seat in top medical colleges all over India. The trained and experienced faculty at Deeksha make sure the students understand the concept clearly before attempting to answer the question.
+            </p>
+            <p style="font-family:sans-serif;text-align:right;"><b><i>Admission:</i></b>Through Scholarship test</p><br />
+            <p style="font-family:sans-serif;"><b><i>Course structure:</i></b></p>
+            <table align="center" id="sub" rules="all">
+                <thead>
+                    <tr style="background-color:#984807;">
+                        <th>SUBJECT</th>
+                        <th>MATHS</th>
+                        <th>PHYSICS</th>
+                        <th>CHEMISTRY</th>
+                        <th>BIOLOGY</th>
+                        
+                    </tr>
+                    <tr id="row2" style="background-color: #EAB282;">
+                        <th>CLASSHOURS</th>
+                        <th>120</th>
+                        <th>100</th>
+                        <th>100</th>
+                        <th>100</th>
+                        
+                    </tr>
+                </thead>
+            </table>
+        </div>
+            </div>
+    </div>
+    <script>
+    var det = document.getElementById("details");
+    var button = document.getElementById("btn");
+    var count=0;
+    button.onclick = function(){
+   
+       if (count==1) {
+           det.className = "animated fadeOut";
+            
+           
+            count = 0;
+
+        
+       } else {
+          
+           det.className = "animated fadeInLeft";
+           det.style.display = "block";
+           count = 1;
+          
+        
+       }
+        
+    }
+    </script>
+
+    <footer class="flex">
+  
+  <ul class="footer-list-top">
+
+    <li>
+      <h4 class="footer-list-header">QUICK LINKS</h4></li>
+     
+    <li><a href='aboutus.html' class="list footer-list-anchor" >About Us</a></li>
+    <li><a href='contactus.html' class="list footer-list-anchor" >Contact Us</a></li>
+    <li><a href='Admission.html' class="list footer-list-anchor" >Admission</a></li>
+
+    <li><a href='centers.html'  class="list footer-list-anchor">Centres</a></li>
+
+    
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">CONTACT US</h4></li>
+      <p class="add footer-list">27, Bull Temple Road, Basavanagudi, <br>
+            Bengaluru, Karnataka, 560004<br>
+        080-4260 4600, +91-9538141504<br>
+        customercare@saastha-edu.in</p>
+  </ul>
+  <ul class="footer-list-top">
+    <li >
+      <h4 class="footer-list-header">COURSES</h4></li>
+    <li><a href='SaasthaAdv.html' class="list footer-list-anchor" >IIT - JEE</a></li>
+    <li><a href='medical.html' class="list footer-list-anchor" >MEDICAL</a></li>
+    <li><a href='CrashCourse.html' class="list footer-list-anchor" >CET / Crash Course</a></li>
+   
+  </ul>
+
+<section class="social-section flex-rw">
+      <span class="social-overlap social-connect">
+      CONNECT <span class="social-small">with</span> US
+      </span>
+      <span class="social-overlap social-icons-wrapper">
+      <a href="https://www.facebook.com/public/Saastha-Educare" class="list" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="list" target="_blank" title="Twitter" ><i class="fa fa-twitter"></i></a>
+      <a href="https://instagram.com/" class="list" target="_blank" title="Instagram" ><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="list" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/" class="list" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+
+<div class="footer-bottom-wrapper">  
+
+ <p>&nbsp&nbsp&nbsp&nbsp© Saastha Educational Services Private Limited 2017  | All Rights Reserved</p>
+</div>
+		<a id="go-to-top" href="#" onclick="topFunction()" title="Back to top" ></a>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("go-to-top").style.display = "block";
+    } else {
+        document.getElementById("go-to-top").style.display = "none";
+    }
+}
+
+function topFunction() {
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</footer> 
+</body>
+</html>

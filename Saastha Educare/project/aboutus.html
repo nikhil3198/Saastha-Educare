@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../project/css/footer.css">
+	<link rel="stylesheet" href="../project/css/header.css">
+	<style type="text/css">
+         
+	</style>
+</head>
+<body>
+<div id="abc">
+			<div class="logo" style="background-image:url('../project/images/WOOD.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
+				<a href="#logo"><img id="logo" src="../project/images/Saastha Logo.jpg" alt="Saastha" style="width:150px;height:108px;"></a>
+				<link rel="stylesheet" href="../project/css/aboutus.css">
+				
+			</div>
+			<div class="topnav" id="myTopnav">
+				<div style="margin-bottom: 40px">
+					<a href="Main.html">
+						<i class="fa fa-home"></i>
+					Home</a>
+					<a href="aboutus.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;About Us</a>
+					
+					<div id="mydropdown" class="dropdown">
+						<button  class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Courses
+						</button>
+						
+						<div class="dropdown-content">
+							<a href="SaasthaAdv.html">IIT-JEE</a>
+							<a href="medical.html">Medical</a>
+							<a href="crashcourse.html">CET / Crash Course</a>
+						</div>
+					</div>
+					<a href="Admission.html"><i class="fa fa-adn" aria-hidden="true"></i>&nbsp;Admission</a>
+					<a href="centers.html"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Centers</a>
+					<a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a>
+					<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a>
+					<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>
+			<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+			x.className += " responsive";
+			} else {
+			x.className = "topnav";
+			}
+			var y = document.getElementById("mydropdown");
+			if (y.className === "dropdown") {
+			y.className += " responsive";
+			} else {
+			y.className = "dropdown";
+			}
+			}
+			</script>
+		</div>
+		<h1 id="h" class="head">About Us </h1>
+
+		<div style="background-color:#ffffffc2;overflow: hidden;">
+			<div id="accord" style="width: 25%;float: left;margin-top: 20px;margin-left: 15px;">
+				
+               			<a href="#" id="defaultmenu" onclick="paneldiv(event,'panel1')" class="accordion">About Us</a>
+					   <div id="panel1" class="panel" >
+							<ul >
+    							<li><a onclick="anch(event,'dir')" class="panel anc" href="#" title="From director's desk">From Director's desk...</a></li>
+    							<li ><a onclick="anch(event,'vis')" class="panel anc" href="#" title="Vision &amp; Mission">Vision &amp; Mission</a></li>
+							</ul> 
+						 </div>
+						 <a  href="#" onclick="anch(event,'why')" class="accordionwhy">Why Saastha</a>
+						  <a href="#" onclick="paneldiv(event,'panel2')" class="accordion">Courses</a>
+						   <div id="panel2" class="panel">
+							<ul >
+    							<li><a class="panel anc" href="SaasthaAdv.html" title="Saastha Advance">IIT - JEE</a></li>
+    							<li ><a class="panel anc" href="medical.html" title="Medical">Medical</a></li>
+    							<li ><a class="panel anc" href="CrashCourse.html" title="CET/Crash Course">CET / Crash Course</a></li>
+							</ul> 
+						 </div>
+				               		
+		                   
+						                                            	   	
+			</div>
+
+			<script>
+
+
+/*for (i = 0; i < acc.length; i++) {
+	
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+
+}*/
+
+
+
+function paneldiv(evt,panelname){
+	document.getElementById(panelname).classList.toggle("show");
+
+
+/*var panels=document.getElementsByClassName('panel');
+for (i = 0; i < panels.length; i++) {
+        panels[i].style.display = "block";
+    }
+var acc = document.getElementsByClassName("accordion");
+for (i = 0; i < acc.length; i++) {
+        acc[i].className = acc[i].className.replace(" active", "");
+    }
+
+    document.getElementById(panelname).style.display = "block";
+    evt.currentTarget.className += " active";
+    */
+}
+
+
+function anch(e,divname){
+	
+	if(divname=='dir')
+	{
+		document.getElementById('abt').style.display="none";
+		document.getElementById('vis').classList.remove("show");
+		document.getElementById('why').classList.remove("show");
+		document.getElementById(divname).classList.add("show");
+		document.getElementById('h').textContent="From Director's desk";
+	}
+else if(divname=='abt')
+	{
+		document.getElementById('dir').classList.remove("show");
+		document.getElementById('vis').classList.remove("show");
+		document.getElementById('why').classList.remove("show");
+		document.getElementById(divname).classList.add("show");
+		document.getElementById('h').textContent="About Us";
+	}
+
+else if(divname=='why')
+	{
+		document.getElementById('abt').style.display="none";
+		document.getElementById('vis').classList.remove("show");
+		document.getElementById('dir').classList.remove("show");
+		document.getElementById(divname).classList.add("show");
+		document.getElementById('h').textContent="Why Saastha";
+
+	}
+
+else if(divname=='vis')
+	{
+		document.getElementById('abt').style.display="none";
+		document.getElementById('dir').classList.remove("show");
+		document.getElementById('why').classList.remove("show");
+		document.getElementById(divname).classList.add("show");
+		document.getElementById('h').textContent="Vision & Mission";
+	}
+}
+</script>
+
+			<div id="abt" class="aboutus" style="">
+			<div class="bordiv" style="margin-left: 40px;">
+					<p><a class="anc1" href="homepage.htm">Home</a> > <a class="anc1" href="aboutus.html">About Us</a></p>
+					<h2 class="subhead" >About Us </h2>
+					<p>
+						
+					<b>SAASTHA EDUCARE</b> was born out of the dream of three 
+					directors who had a vision to make a modest contribution to society. 
+					SAASTHA has been working towards its mission to  enable students realize their potential and make their dreams come true. At  SAASTHA 
+					the  preparation process itself is a fun filled and growth involving experience.
+					 </p>
+					<h2 class="subhead" >What makes Saastha different ? </h2>
+					<p>
+						           The efficiency of any institute's teaching standard is determined by one thing its approach. We value our students and their success. We realize that the success  of our students is the only reason for our existence. 
+									And since this is our driving force, we lay strong emphasis on certain cardinal principles:
+									<ul>
+										<li>We are a teaching organization with focus on good teaching above everything else.</li>
+										<li>We strive to fulfil the needs of our students to the best of our capabilities. </li>
+										<li>We work really hard, setting high standards and expect the same from our students too. </li>
+										<li>We inform and educate our students about the need for strong self discipline and self motivation to achieve their goals.</li>
+
+
+									</ul>
+
+					</p>
+
+					</div>
+			</div>
+
+			<div id="dir" class="director" style=" display:none;">
+			<div class="bordiv" style="margin-left: 40px;">
+					<p><a class="anc1" href="homepage.htm">Home</a> > <a class="anc1" href="aboutus.html">About Us</a> > <a class="anc1" href="#">From Director's desk</a></p>
+					<h2 class="subhead" >From Director's desk 	...</h2>
+					<p>
+					Indian education taught the world everything...from the difference between loss and profit, to the rise and fall of Economy, a glimpse to the beauty of nature, and  to the disasters to life...With great contributors like Ramanujan and CV Raman, we  have proved the world that we are proud to be a part of the richest educational  hub.  </p>
+					<p>
+				      We, the beginners of Gurukul System, wished to reside with the Guru (Teacher) and simultaneously gain knowledge. Building a personal relationship with the teacher, we sought enlightment on various aspects of life. But today, it is a different picture all together. One side, there are number of students (not so attentive!—you could add if you want to) and on the other side we have a teacher making an effort to provide quality education. </p>
+				      <p>
+				     The gap you see in between both is not just a physical gap, but a personal one too. Thanks to this professional way of educating, where a student is losing the personal attachment with the teacher. We at Saastha, aim to change this scenario, preparing a student for a real life. Educate in a way where a student has an ability to think by himself and explore the world around him/her. We build in situations where in the student is made to think and 
+					handle the circumstances in a positive manner. Emphasizing on mind set development, we not only wish to help the student in honing his/her knowledge but also intend to create a strong tie between teacher and student. </p>
+					<p>
+				      After all, Knowledge is not books you carry, grades you get, it is the ability to find your own answers!
+				     </p>
+
+				
+					</div>
+			</div>
+
+			<div id="vis" class="vision" style=" display:none;">
+			<div class="bordiv" style="margin-left: 40px;">
+					<p><a class="anc1" href="homepage.htm">Home</a> > <a class="anc1" href="aboutus.html">About Us</a> > <a class="anc1" href="#">Vision &amp; Mission</a></p>
+					<h2 class="subhead" >Our Vision </h2>
+					<p>
+					Is to emerge as a holistic education provider in the field of competitive coaching for   IIT & Medical.	
+				
+					 </p>
+					<h2 class="subhead" >Mission</h2>
+					<p>
+						           Our Mission is to serve society through excellence in education. We always aim to define , and continually refine , the absolute standard of excellence in the area of competitive exams at 12th standard level through
+									<ul>
+										<li>The quality of education we provide</li>
+						<li>The efficiency of our methodologies and systems</li>
+						<li>Truthfulness forwards students, parents, society and nation</li>
+
+									</ul>
+
+					</p>
+					</div>
+			</div>
+
+
+			<div id="why" class="whySaastha" style="display:none;">
+			<div  class="bordiv" style="margin-left: 40px;">
+					<p><a class="anc1" href="homepage.htm">Home</a> > <a class="anc1" href="#">Why Saastha </a></p>
+					<h2 class="subhead" >Why Saastha ?</h2>
+					<p>
+					  <b>EXTREMELY COMPETENT AND COMMITED FACULTY TEAM</b>
+								  	<ul>
+									<li>Each and every faculty at SAASTHA is extremely knowledgeable, approachable and passionate   about teaching</li>
+										<li>All the teachers are from prestigious universities , therefore better equipped to motivate students take care of the nitty-gritty's involved in the preparation process.</li>
+									<li>All the SAASTHA faculty members are solely devoted to serve students at SAASTHA . Hence their commitment is distinctly higher than visiting/part time faculty.</li>
+			 						<li>In addition to this, teachers at  SAASTHA ensure that every class is interactive by encouraging students to express opinions and ask questions</li>
+	
+										</ul>
+											
+
+					  </p>
+					
+				
+					</div>
+			</div>
+
+			
+
+		</div>
+
+		
+
+ <footer class="flex">
+  
+  <ul class="footer-list-top">
+
+    <li>
+      <h4 class="footer-list-header">QUICK LINKS</h4></li>
+     
+    <li><a href='aboutus.html' class="list footer-list-anchor" >About Us</a></li>
+    <li><a href='contactus.html' class="list footer-list-anchor" >Contact Us</a></li>
+    <li><a href='Admission.html' class="list footer-list-anchor" >Admission</a></li>
+
+    <li><a href='centers.html'  class="list footer-list-anchor">Centres</a></li>
+
+    
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">CONTACT US</h4></li>
+      <p class="add footer-list">27, Bull Temple Road, Basavanagudi, <br>
+            Bengaluru, Karnataka, 560004<br>
+        080-4260 4600, +91-9538141504<br>
+        customercare@saastha-edu.in</p>
+  </ul>
+  <ul class="footer-list-top">
+    <li >
+      <h4 class="footer-list-header">COURSES</h4></li>
+    <li><a href='SaasthaAdv.html' class="list footer-list-anchor" >IIT - JEE</a></li>
+    <li><a href='medical.html' class="list footer-list-anchor" >MEDICAL</a></li>
+    <li><a href='CrashCourse.html' class="list footer-list-anchor" >CET / Crash Course</a></li>
+   
+  </ul>
+
+<section class="social-section flex-rw">
+      <span class="social-overlap social-connect">
+      CONNECT <span class="social-small">with</span> US
+      </span>
+      <span class="social-overlap social-icons-wrapper">
+      <a href="https://www.facebook.com/public/Saastha-Educare" class="list" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="list" target="_blank" title="Twitter" ><i class="fa fa-twitter"></i></a>
+      <a href="https://instagram.com/" class="list" target="_blank" title="Instagram" ><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="list" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/" class="list" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+
+<div class="footer-bottom-wrapper">  
+
+ <p>&nbsp&nbsp&nbsp&nbsp© Saastha Educational Services Private Limited 2017  | All Rights Reserved</p>
+</div>
+		<a id="go-to-top" href="#" onclick="topFunction()" title="Back to top" ></a>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("go-to-top").style.display = "block";
+    } else {
+        document.getElementById("go-to-top").style.display = "none";
+    }
+}
+
+function topFunction() {
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</footer> 
+
+
+
+</body>
+</html>

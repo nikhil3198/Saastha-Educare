@@ -1,0 +1,206 @@
+﻿	<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../project/css/footer.css">
+		<link rel="stylesheet" href="../project/css/header.css">
+		<link rel="stylesheet" href="../project/css/main.css">
+		<style>
+						.logo{
+							background-image:url('../project/images/WOOD.jpg');background-repeat: no-repeat;background-size: 100% 100%;
+						}
+		
+		</style>
+	</head>
+	<body>
+		<div id="abc">
+			<div class="logo" style="">
+				<a href="#logo"><img id="logo" src="../project/images/Saastha Logo.jpg" alt="Saastha" style="width:150px;height:108px;"></a>
+
+				<marquee direction="right" style="color:white;font-size: 22px;">“Education is the manifestation of the perfection already in man”  </marquee>
+				
+				
+			</div>
+			<div class="topnav" id="myTopnav">
+				<div style="margin-bottom: 40px">
+					<a href="Main.html">
+						<i class="fa fa-home"></i>
+					Home</a>
+					<a href="aboutus.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;About Us</a>
+					
+					<div id="mydropdown" class="dropdown">
+						<button  class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Courses
+						</button>
+						
+						<div class="dropdown-content">
+							<a href="SaasthaAdv.html">IIT-JEE</a>
+							<a href="medical.html">Medical</a>
+							<a href="crashcourse.html">CET / Crash Course</a>
+						</div>
+					</div>
+					<a href="Admission.html"><i class="fa fa-adn" aria-hidden="true"></i>&nbsp;Admission</a>
+					<a href="centers.html"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Centers</a>
+					<a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a>
+					<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a>
+					<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>
+			<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+			x.className += " responsive";
+			} else {
+			x.className = "topnav";
+			}
+			var y = document.getElementById("mydropdown");
+			if (y.className === "dropdown") {
+			y.className += " responsive";
+			} else {
+			y.className = "dropdown";
+			}
+			}
+			</script>
+		</div>
+		<div style="margin-bottom: -21px;">
+			<h1 id="testi">TESTIMONIALS</h1>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="..\project\images\testimonial3.jpg" class="imgTest">
+					<div class="text">
+						<h3 class="heading" style="font-size:20px;"><em>Nicest experience I have ever had in my life. Thanks Saastha!</em></h3>
+						<p><i>Hemanth Amardeep Santhoor, AIIMS</i></p>
+						<p>The teachers at Saastha taught the key concepts and problem solving strategies well. Apart from the NCERT books,the study material provided by Saastha is sufficient to crack all the medical entrance tests. The regular online tests helped me revise the concepts well</p>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="..\project\images\testimonial3.jpg" class="imgTest">
+					<div class="text">
+						<h3 class="heading" style="font-size:20px;"><em>Saastha helped me to face challenges confidently</em></h3>
+						<p><i>Ramya Jayasimha, KIMS, Bangalore</i></p>
+						<p>Saastha methodology inculcated a deeper understanding of subjects and the urge to know more. It broadened my horizons and taught me to think outside the box.</p>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="..\project\images\testimonial3.jpg" class="imgTest" >
+					<div class="text">
+						<h3 class="heading" style="font-size:20px;"><em>Saastha Distance Learning helped me achieve my dreams</em></h3>
+						<p><i>Keerthana Haridas, AIPMT -1079</i></p>
+						<p>Saastha, through its Distance Learning Program, has helped me achieve my dreams. The teachers take a personal interest in the students and guide them very effectively thus helping every student realise his or her true potential.</p>
+					</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			
+			<div id="dot" style="">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+		function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+		}
+		</script>
+		<div id="divIdea" style="">
+			<div class="idealogy">
+				Our Ideology
+			</div>
+			<div class="nel" style=" ">
+				<h1 style="color: white;font-family: Comic Sans MS, cursive, sans-serif;"><i class="fa fa-quote-left" aria-hidden="true" style="color: white;"></i>&nbsp;Education is the most powerful weapon which you can use to change the world</h2>
+				<h3 style="color:#B1ADAC;float:right;font-family:Comic Sans MS;">	 NELSON MANDELA</h3>
+			</div>
+			<div class="vid" >
+				<video id="video" preload="auto" autoplay="true" loop="loop" controls>
+					<source src="saastha.mp4" type="video/mp4">
+					<source src="saastha.ogg" type="video/ogg">
+				</video>
+			</div>
+		</div>
+		
+		
+		<footer class="flex">
+			
+			<ul class="footer-list-top">
+				<li>
+				<h4 class="footer-list-header">QUICK LINKS</h4></li>
+				
+				<li><a href='aboutus.html' class="list footer-list-anchor" >About Us</a></li>
+				<li><a href='contactus.html' class="list footer-list-anchor" >Contact Us</a></li>
+				<li><a href='Admission.html' class="list footer-list-anchor" >Admission</a></li>
+				<li><a href='centers.html'  class="list footer-list-anchor">Centres</a></li>
+				
+			</ul>
+			<ul class="footer-list-top">
+				<li>
+				<h4 class="footer-list-header">CONTACT US</h4></li>
+				<p class="add footer-list">27, Bull Temple Road, Basavanagudi, <br>
+					Bengaluru, Karnataka, 560004<br>
+					080-4260 4600, +91-9538141504<br>
+				customercare@saastha-edu.in</p>
+			</ul>
+			<ul class="footer-list-top">
+				<li >
+				<h4 class="footer-list-header">COURSES</h4></li>
+				<li><a href='SaasthaAdv.html' class="list footer-list-anchor" >IIT - JEE</a></li>
+				<li><a href='medical.html' class="list footer-list-anchor" >MEDICAL</a></li>
+				<li><a href='CrashCourse.html' class="list footer-list-anchor" >CET / Crash Course</a></li>
+				
+			</ul>
+			<section class="social-section flex-rw">
+				<span class="social-overlap social-connect">
+					CONNECT <span class="social-small">with</span> US
+				</span>
+				<span class="social-overlap social-icons-wrapper">
+					<a href="https://www.facebook.com/public/Saastha-Educare" class="list" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/" class="list" target="_blank" title="Twitter" ><i class="fa fa-twitter"></i></a>
+					<a href="https://instagram.com/" class="list" target="_blank" title="Instagram" ><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/" class="list" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+					<a href="https://plus.google.com/" class="list" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+				</span>
+			</section>
+			<div class="footer-bottom-wrapper">
+				<p>&nbsp&nbsp&nbsp&nbsp© Saastha Educational Services Private Limited 2017  | All Rights Reserved</p>
+			</div>
+			<a id="go-to-top" href="#abc" onclick="topFunction()" title="Back to top" ></a>
+			<script>
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+			document.getElementById("go-to-top").style.display = "block";
+			} else {
+			document.getElementById("go-to-top").style.display = "none";
+			}
+			}
+			function topFunction() {
+			document.body.scrollTop = 100;
+			document.documentElement.scrollTop = 100;
+			}
+			</script>
+		</footer>
+		
+	</body>
+</html>
